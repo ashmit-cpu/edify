@@ -41,10 +41,11 @@ function CampusExperienceActivity() {
       <section className="global_section experience-activity-sec d-none d-md-block" id="gallery">
         <div className="cust-container">
           <h3 className="section-title">
-            Experience the diverse activities at TAC Bangalore
+          Experience the Diverse Activities at Edify School Chikkabanavara
+
           </h3>
           <p className="activity-subtitle">
-            Experience the lively environment at TAG Bangalore, where every activity contributes to a journey of creativity, exploration, and growth, making our campus a place of endless possibilities
+          Immerse yourself in the vibrant environment at Edify School Chikkabanavara, where every activity fosters creativity, exploration, and growth, making it a place of endless opportunities.
           </p>
 
 

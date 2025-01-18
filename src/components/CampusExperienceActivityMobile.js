@@ -41,7 +41,8 @@ function CampusExperienceActivityMobile() {
       <section className="global_section experience-activity-sec d-block d-md-none" id="gallery">
         <div className="cust-container">
           <h3 className="section-title">
-            Experience the diverse activities at TAC Bangalore
+          Experience the Diverse Activities at Edify School Chikkabanavara
+
           </h3>
         </div>
         <CampusExperienceActivityGallery />
