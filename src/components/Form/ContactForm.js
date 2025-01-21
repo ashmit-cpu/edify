@@ -154,46 +154,46 @@ const ContactForm = (props) => {
     });
   }, []);
 
-  const sendFormAbandonmentData = async (values) => {
-    if (!values?.mobile) return; // Ensure mobile is available before sending data
+  // const sendFormAbandonmentData = async (values) => {
+  //   if (!values?.mobile) return; // Ensure mobile is available before sending data
 
-    let finalValues = {
-      ...values,
-      source: src ? src : "",
-      utm_source: urlParams.utm_source,
-      utm_medium: urlParams.utm_medium,
-      utm_campaign: urlParams.utm_campaign,
-      utm_term: urlParams.utm_term,
-      utm_placement: urlParams.utm_placement || "", 
-      utm_content: urlParams.utm_content,
-      utm_device: urlParams.utm_device,
-      Lead_Source_Category: urlParams.Lead_Source_Category || "", // Dynamically added
-      Lead_Source: urlParams.Lead_Source || "", // Dynamically added
-      Lead_Super_Sub_Source: urlParams.Lead_Super_Sub_Source || "", // Dynamically added
-      Lead_Sub_Source: urlParams.Lead_Sub_Source || "",
-      ageGroup: urlParams.A,
-      genderGroup: urlParams.G,
-      houseHoldIncomeGroup: urlParams.HI,
-      current_url: currentUrl, // Add the current URL here
-    };
+  //   let finalValues = {
+  //     ...values,
+  //     source: src ? src : "",
+  //     utm_source: urlParams.utm_source,
+  //     utm_medium: urlParams.utm_medium,
+  //     utm_campaign: urlParams.utm_campaign,
+  //     utm_term: urlParams.utm_term,
+  //     utm_placement: urlParams.utm_placement || "", 
+  //     utm_content: urlParams.utm_content,
+  //     utm_device: urlParams.utm_device,
+  //     Lead_Source_Category: urlParams.Lead_Source_Category || "", // Dynamically added
+  //     Lead_Source: urlParams.Lead_Source || "", // Dynamically added
+  //     Lead_Super_Sub_Source: urlParams.Lead_Super_Sub_Source || "", // Dynamically added
+  //     Lead_Sub_Source: urlParams.Lead_Sub_Source || "",
+  //     ageGroup: urlParams.A,
+  //     genderGroup: urlParams.G,
+  //     houseHoldIncomeGroup: urlParams.HI,
+  //     current_url: currentUrl, // Add the current URL here
+  //   };
 
-    console.log("Final Values to Send:", finalValues);
-    const config = {
-      method: "post",
-      url: "/api/googlesheetapi",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      data: JSON.stringify(finalValues),
-    };
+  //   console.log("Final Values to Send:", finalValues);
+  //   const config = {
+  //     method: "post",
+  //     url: "/api/googlesheetapi",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     data: JSON.stringify(finalValues),
+  //   };
 
-    try {
-      const response = await axios(config);
-      console.log("Google Sheet response:", response.data);
-    } catch (error) {
-      console.error("Error submitting to Google Sheet:", error);
-    }
-  };
+  //   try {
+  //     const response = await axios(config);
+  //     console.log("Google Sheet response:", response.data);
+  //   } catch (error) {
+  //     console.error("Error submitting to Google Sheet:", error);
+  //   }
+  // };
 
   const handleClick = (sourceValue) => {
     setSource(sourceValue);
@@ -425,9 +425,7 @@ const ContactForm = (props) => {
                     // onBlur={formik.handleBlur}
                     onBlur={(e) => {
                       formik.handleBlur(e); // Correctly trigger Formik's handleBlur
-                      if (formik.values.mobile) {
-                        sendFormAbandonmentData(formik.values); // Send data to Zoho if mobile is filled
-                      }
+                      
                     }}
                     maxLength={
                       phoneNumber &&

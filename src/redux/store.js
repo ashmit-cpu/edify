@@ -13,7 +13,9 @@ export const store = configureStore({
         newsandmedia: newsandmediareducer,
         events: eventreducer,
         blogs: blogreducer,
-        seo:seoreducer,
-        testimonial:testimonialreducer
+        seo: seoreducer,
+        testimonial: testimonialreducer,
     },
-})
+});
+
+ 
