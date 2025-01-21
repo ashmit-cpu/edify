@@ -432,7 +432,7 @@ const EnquireForm = (props) => {
                       id="mobile"
                       name="mobile"
                       inputClass="form-control"
-                      className="form-control"
+                      className="form-control d-flex"
                       placeholder="Enter your Phone number"
                       enableSearch={true}
                       defaultCountry="IN"
@@ -564,7 +564,7 @@ const EnquireForm = (props) => {
                 )}
               </div>
               <div className=" col-md-12 text-center mb-0">
-                <div className="form-groups">
+                <div className="form-groups mt-3">
                   <button
                     type="submit"
                     className="btn secondary-btn w-100 btn-purple"

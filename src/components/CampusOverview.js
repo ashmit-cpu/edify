@@ -77,7 +77,7 @@ function CampusOverview() {
         </div> */}
         <div className="cust-container m-cust-container">
           <div className="row overview-wrap">
-            <div className="col-12 col-lg-6 mt-4 order-2 order-md-1 m-title-wrap">
+            <div className="col-12 col-lg-6 mt-4 order-2 order-md-1 m-title-wrap p-4">
               <div className="title-wrap">
                 <p className="subtitle font-gilroy-bold">
                   Discover the Vibrant{" "}

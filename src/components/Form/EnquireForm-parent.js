@@ -346,7 +346,7 @@ const EnquireForm = (props) => {
                       id="mobile"
                       name="mobile"
                       inputClass="form-control"
-                      className="form-control"
+                      className="form-control d-flex"
                       placeholder="Enter your Phone number"
                       enableSearch={true}
                       defaultCountry="IN"

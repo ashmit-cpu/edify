@@ -40,7 +40,7 @@ function CampusNav() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const targetElement = document.getElementById("target-6");
+      const targetElement = document.getElementById("target-4");
       if (targetElement) {
         const rect = targetElement.getBoundingClientRect();
         if (rect.top <= 0) {
@@ -191,7 +191,7 @@ function CampusNav() {
                         
                         <li>
                           <a
-                            href="#target-6"
+                            href="#target-5"
                             onClick={() => handleButtonScroll("target-5")}
                           >
                             <div className="nav-btn d-flex justify-content-between align-items-center">
@@ -216,7 +216,7 @@ function CampusNav() {
                         </li>
                         <li>
                           <a
-                            href="#target-7"
+                            href="#target-6"
                             onClick={() => handleButtonScroll("target-6")}
                           >
                             <div className="nav-btn d-flex justify-content-between align-items-center">
@@ -241,7 +241,7 @@ function CampusNav() {
                         </li>
                         <li>
                           <a
-                            href="#target-8"
+                            href="#target-7"
                             onClick={() => handleButtonScroll("target-7")}
                           >
                             <div className="nav-btn d-flex justify-content-between align-items-center">
@@ -266,7 +266,7 @@ function CampusNav() {
                         </li>
                         <li>
                           <a
-                            href="#target-9"
+                            href="#target-8"
                             onClick={() => handleButtonScroll("target-8")}
                           >
                             <div className="nav-btn d-flex justify-content-between align-items-center">
@@ -291,7 +291,7 @@ function CampusNav() {
                         </li>
                         <li>
                           <a
-                            href="#target-10"
+                            href="#target-9"
                             onClick={() => handleButtonScroll("target-9")}
                           >
                             <div className="nav-btn d-flex justify-content-between align-items-center">

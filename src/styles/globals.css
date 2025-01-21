@@ -114,6 +114,8 @@ img {
   max-width: 100%;
 }
 
+
+
 a:focus,
 input:focus,
 textarea:focus,
@@ -361,6 +363,10 @@ body::-webkit-scrollbar-thumb:hover {
   background: var(--primary-color);
   display: flex;
   padding: 0.5vw 0px;
+}
+
+.sticky-top{
+  top: 16rem !important;
 }
 
 .header_cta {
@@ -1301,22 +1307,22 @@ body::-webkit-scrollbar-thumb:hover {
 
 .primary-btn {
   border-radius: 64px;
-  background: var(--primary-color);
+  background: var(--primary-color)!important;
   backdrop-filter: blur(20px);
   color: #fff !important;
   font-size: 18px;
   font-weight: 500;
   padding: 10px 30px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  border: 1px solid transparent;
-  box-shadow: 0 0 0 0 var(--primary-color);
+  transition: all 0.3s ease-in-out !important;
+  border: 1px solid transparent !important;
+  box-shadow: 0 0 0 0 var(--primary-color)!important;
 }
 
 .primary-btn:hover {
   background: #303030;
   transform: translateY(-4px) translateX(-2px);
-  box-shadow: 2px 5px 0 0 var(--primary-color);
+  box-shadow: 2px 5px 0 0 var(--light-vers-color) !important;
 }
 
 .primary-btn .arrow-down {
@@ -1335,19 +1341,19 @@ body::-webkit-scrollbar-thumb:hover {
 
 .secondary-btn {
   border-radius: 64px;
-  background: #fff;
-  color: var(--primary-color);
+  background: var(--primary-color) !important;
+  color: white !important;
   font-size: 16px;
   font-weight: 500;
   padding: 10px 40px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out !important;
   border: 1px solid transparent;
-  box-shadow: 0 0 0 0 var(--dark-color);
+  box-shadow: 0 0 0 0 var(--light-vers-color);
 }
 
 .secondary-btn:hover {
-  background: var(--dark-color);
+  background: var(--light-vers-color);
   color: #fff;
   transform: translateY(-4px) translateX(-2px);
   box-shadow: 2px 5px 0 0 var(--dark-color);
@@ -3525,6 +3531,7 @@ button.accordion-button {
 .popupform .modal-content {
   border-radius: 30px;
   color: #000;
+  top: 6rem;
 }
 .poptitle {
   font-size: 2vw;
@@ -7063,7 +7070,7 @@ button.accordion-button {
 }
 
 .enquiry-now-button {
-  background-color: #185850; /* Brand color */
+  background-color: var(--primary-color); /* Brand color */
   color: white;
   border: none;
   width: 50px; /* Adjust the width for a narrow button */
@@ -7096,7 +7103,7 @@ button.accordion-button {
 
 /* Hover effect for the buttons */
 .enquiry-now-button:hover {
-  background-color: #148e70; /* Slightly lighter shade for hover effect */
+  background-color: #f85f00; /* Slightly lighter shade for hover effect */
 }
 
 .whatsapp-image:hover {
