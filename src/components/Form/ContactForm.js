@@ -51,6 +51,24 @@ const validationSchema = Yup.object().shape({
 
 const classdata = [
   {
+    classname: "IK-1",
+  },
+  {
+    classname: "IK-2",
+  },
+  {
+    classname: "IK-3",
+  },
+  {
+    classname: "Class 1",
+  },
+  {
+    classname: "Class 2",
+  },
+  {
+    classname: "Class 3",
+  },
+  {
     classname: "Class 4",
   },
   {
@@ -77,6 +95,8 @@ const classdata = [
   {
     classname: "Class 12",
   },
+  
+  
 ];
 const campusdata = [
   {
