@@ -289,31 +289,7 @@ function CampusNav() {
                             </div>
                           </a>
                         </li>
-                        <li>
-                          <a
-                            href="#target-9"
-                            onClick={() => handleButtonScroll("target-9")}
-                          >
-                            <div className="nav-btn d-flex justify-content-between align-items-center">
-                              <div className="d-flex align-items-center justify-content-start ">
-                                <Image
-                                  src="/images/Home/nav/icon/agri.svg"
-                                  alt="icon"
-                                  width={35}
-                                  height={35}
-                                />
-                                <p className="mx-3">Agriculture</p>
-                              </div>
-                              <Image
-                                src="/images/Home/nav/icon/arrow.svg"
-                                alt="icon"
-                                width={40}
-                                height={40}
-                                className="arrow-icon"
-                              />
-                            </div>
-                          </a>
-                        </li>
+                        
                       </ul>
                     </nav>
                   </ScrollSpy>
