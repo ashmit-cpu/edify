@@ -545,7 +545,7 @@ const EnquireForm = (props) => {
                 </div>
               </div> */}
 
-              <div className="form-group col-md-12">
+              {/* <div className="form-group col-md-12">
                 <div className="input-group">
                   <textarea
                     id="footer-form-msg"
@@ -560,7 +560,7 @@ const EnquireForm = (props) => {
                 {formik.touched.msg && formik.errors.msg && (
                   <span className="error text-danger">{formik.errors.msg}</span>
                 )}
-              </div>
+              </div> */}
               <div className=" col-md-12 text-center mb-0">
                 <div className="form-groups mt-3">
                   <button

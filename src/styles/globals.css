@@ -6884,7 +6884,7 @@ button.accordion-button {
 .stick-sec {
   position: sticky;
   top: 9.7rem;
-  z-index: 9999;
+  z-index: 999;
   background: #fffdf5;
   padding-block: 1rem;
 }
