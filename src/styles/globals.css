@@ -367,6 +367,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .sticky-top{
   top: 16rem !important;
+  z-index: 99 !important;
 }
 
 .header_cta {
