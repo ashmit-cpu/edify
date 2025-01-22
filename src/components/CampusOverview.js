@@ -85,8 +85,8 @@ function CampusOverview() {
               </div>
               <h2 className="section-title home-title">
                 <div className="d-flex align-items-center justify-content-start">
-                  Learning Environment at Bangalore, nurturing your child to
-                  excel in 
+                 <span> Learning Environment at <b>Bangalore</b>, nurturing your child to
+                 excel in </span>
                 </div>
                 <div className="d-flex align-items-center justify-content-start">
                   every aspect of life
